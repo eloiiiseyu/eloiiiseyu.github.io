@@ -208,8 +208,8 @@ section {
 }
 /* Footer */
 footer {
-    background: #222;
-    color: white;
+    background: white;
+    color: black;
     padding: 20px;
 }
 
