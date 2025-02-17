@@ -165,7 +165,11 @@ section {
 .experience, .projects {
     background: #fff;
 }
-
+.experience h2 {
+    font-size: 54px;
+    font-weight: bold;
+    color: black;
+}
 .project, .job {
     background: #eee;
     margin: 20px auto;
@@ -173,7 +177,11 @@ section {
     max-width: 600px;
     border-radius: 5px;
 }
-
+.projects h2 {
+    font-size: 54px;
+    font-weight: bold;
+    color: black;
+}
 /* Contact Section */
 .contact p a {
     color: #ff5733;
