@@ -89,8 +89,8 @@ body {
     padding: 50px 20px;
 }
 .hero-image {
-    width: 60%;
-    max-width: 600px;
+    width: 80%;
+    max-width: 800px;
 }
 .hero-text {
     width: 40%;
@@ -109,11 +109,7 @@ body {
     display: flex;
     gap: 15px;
 }
-.social-links {
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
-}
+
 .icon-btn {
     background-color: #333;
     color: white;
@@ -169,7 +165,11 @@ section {
 .contact p a:hover {
     text-decoration: underline;
 }
-
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
 /* Footer */
 footer {
     background: #222;
