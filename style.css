@@ -161,7 +161,11 @@ body {
 section {
     padding: 80px 20px;
 }
-
+.about h2 {
+    font-size: 54px;
+    font-weight: bold;
+    color: black;
+}
 .experience, .projects {
     background: #fff;
 }
@@ -177,7 +181,7 @@ section {
     max-width: 600px;
     border-radius: 5px;
 }
-.project h2 {
+.projects h2 {
     font-size: 54px;
     font-weight: bold;
     color: black;
