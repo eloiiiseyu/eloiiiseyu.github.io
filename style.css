@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -8,16 +8,75 @@ body {
     color: #333;
 }
 
-/* Hero Section */
-.hero {
-    background: url('images/hero-bg.jpg') no-repeat center center/cover;
-    color: white;
-    padding: 120px 0;
+/* Navigation Bar */
+.navbar {
+    background: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-.hero .highlight {
-    color: #ff5733;
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.navbar .logo {
+    font-size: 24px;
     font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: gray;
+}
+
+/* Hero Section */
+.hero {
+    padding: 150px 20px;
+    background: white;
+}
+
+.hero .hero-image {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+}
+
+.hero-buttons {
+    margin-top: 20px;
 }
 
 .btn {
@@ -27,21 +86,41 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 10px;
+    margin: 10px;
+    font-weight: bold;
+    transition: background 0.3s;
 }
 
-/* Projects Section */
-.projects {
-    padding: 50px 20px;
-    background: white;
+.btn:hover {
+    background: #e04e2a;
 }
 
-.project {
+/* Sections */
+section {
+    padding: 80px 20px;
+}
+
+.experience, .projects {
+    background: #fff;
+}
+
+.project, .job {
     background: #eee;
     margin: 20px auto;
     padding: 15px;
     max-width: 600px;
     border-radius: 5px;
+}
+
+/* Contact Section */
+.contact p a {
+    color: #ff5733;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact p a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
