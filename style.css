@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Lucida Console",  monospace;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -160,11 +160,13 @@ body {
 section {
     padding: 80px 20px;
 }
+
 .about h2 {
     font-size: 54px;
     font-weight: bold;
     color: black;
 }
+
 .experience, .projects {
     background: #fff;
 }
