@@ -180,7 +180,11 @@ section {
     font-weight: bold;
     text-decoration: none;
 }
-
+.contact h2 {
+    font-size: 54px;
+    font-weight: bold;
+    color: black;
+}
 .contact p a:hover {
     text-decoration: underline;
 }
