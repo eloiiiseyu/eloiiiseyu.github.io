@@ -106,6 +106,24 @@ body {
 }
 .hero-buttons {
     margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+.icon-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .btn {
