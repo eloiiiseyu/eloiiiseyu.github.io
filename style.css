@@ -76,8 +76,27 @@ body {
 }
 
 .hero-buttons {
-    margin-top: 20px;
-}
+    display: flex;
+    gap: 20px; /* Adjust spacing between buttons */
+  }
+  
+  .hero-buttons button {
+    background-color: #333; /* Dark background */
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px; /* Rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 150px; /* Adjust width */
+    height: 60px; /* Adjust height */
+    line-height: 1.2;
+  }
+  
 
 .hero .container {
     display: flex;
