@@ -107,8 +107,8 @@ body {
     padding: 50px 20px;
 }
 .hero-image {
-    width: 80%;
-    max-width: 800px;
+    width: 100%;  /* Increase to full width */
+    max-width: 1200px; /* Increase the max width */
 }
 .hero-text {
     width: 40%;
