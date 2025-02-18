@@ -158,29 +158,22 @@ section {
     color: black;
 }
 
-.experience, .projects {
-    background: #f9f9f9; /* Clean white background */
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 700px; /* Slightly wider for better layout */
-    border-radius: 12px; /* Softer, rounded edges */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
-    border: 1px solid #e0e0e0; /* Light border for definition */
-}
+
 .experience h2 {
     font-size: 54px;
     font-weight: bold;
     color: black;
 }
-.project, .job {
-    background: #f9f9f9; /* Lighter background for a cleaner look */
+.projects, .experience {
+    background: #f4f4f4; /* Lighter background for a cleaner look */
     margin: 20px auto;
     padding: 20px;
     max-width: 650px; /* Slightly wider for better readability */
     border-radius: 10px; /* Softer rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    border: 1px solid #ddd; /* Light border for structure */
+    border: 1px solid #eeeded; /* Light border for structure */
 }
+
 
 .projects h2 {
     font-size: 54px;
