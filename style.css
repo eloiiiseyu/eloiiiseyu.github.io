@@ -81,7 +81,10 @@ body {
 .hero-buttons {
     margin-top: 20px;
 }
-  
+.gap {
+    height: 20px; /* Adjust the gap height as needed */
+}
+
 .btn {
     background-color: black;
     color: white;
