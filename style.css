@@ -73,7 +73,7 @@ body {
 }
 
 .hero p {
-    font-size: 1.5rem;
+    font-size: 36px;
     margin-top: 10px;
 }
 
@@ -105,9 +105,7 @@ body {
     width: 100%;  /* Increase to full width */
     max-width: 1200px; /* Increase the max width */
 }
-.hero-text {
-    width: 40%;
-}
+
 
 .hero-description {
     font-size: 1rem;
