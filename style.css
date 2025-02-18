@@ -102,8 +102,11 @@ body {
     padding: 50px 20px;
 }
 .hero-image {
-    width: 100%;  /* Increase to full width */
-    max-width: 1200px; /* Increase the max width */
+    width: 100%;  /* Full width */
+    max-width: 1400px; /* Increased max width */
+    height: auto; /* Keep aspect ratio */
+    display: block;
+    margin: 0; /* Removes centering */
 }
 
 
