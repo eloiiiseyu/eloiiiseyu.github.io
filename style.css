@@ -189,7 +189,34 @@ section {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     border: 1px solid #eeeded; /* Light border for structure */
 }
+.project {
+    flex: 1;
+    min-width: 300px;
+    max-width: 30%;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
 
+.project-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #f5f5f5;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-button:hover {
+    background-color: transparent; /* Turns transparent on hover */
+    color: black; /* Keep text black */
+    border: 1px solid black; /* Make the border black */
+}
 
 .projects h2 {
     font-size: 54px;
