@@ -191,7 +191,7 @@ section {
 
 .project-button:hover {
     background-color: #C19A6B !important; /* Turns dark blue on hover */
-    color: white; /* Turns text white */
+    color: white!important; /* Turns text white */
     border: 1px solid #C19A6B !important; /* Matches the new background color */
 }
 
