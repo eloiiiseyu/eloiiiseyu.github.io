@@ -92,9 +92,9 @@ body {
 }
 
 .hero-button:hover {
-    background-color: transparent; /* Turns transparent on hover */
-    color: black; /* Keep text black */
-    border: 1px solid black; /* Make the border black */
+    background-color: #0056b3 !important; /* Turns transparent on hover */
+    color: white !important; /* Keep text black */
+    border: 1px solid #0056b3 !important; /* Make the border black */
 }
 
 .hero-button:hover:nth-child(2) {
@@ -213,9 +213,9 @@ section {
 }
 
 .project-button:hover {
-    background-color: #0056b3; /* Turns dark blue on hover */
+    background-color: #0056b3 !important; /* Turns dark blue on hover */
     color: white; /* Turns text white */
-    border: 1px solid #0056b3; /* Matches the new background color */
+    border: 1px solid #0056b3 !important; /* Matches the new background color */
 }
 
 .projects h2 {
