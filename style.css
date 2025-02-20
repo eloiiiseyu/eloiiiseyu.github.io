@@ -91,7 +91,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.hero-button:hover {
+.hero-buttons:hover {
     background-color: #C19A6B !important; /* Turns transparent on hover */
     color: white !important; /* Keep text black */
     border: 1px solid #C19A6B !important; /* Make the border black */
