@@ -10,46 +10,46 @@ body {
 
 /* Navigation Bar */
 .navbar {
-    background: white;
-    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent */
+    backdrop-filter: blur(10px); /* Glass effect */
+    padding: 15px 0;
     text-align: center;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
-}
-
-.navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .navbar .logo {
-    font-size: 36px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: bold;
     color: black;
     text-decoration: none;
+    transition: transform 0.3s ease-in-out;
 }
 
-.nav-links {
-    display: flex;
-    gap: 20px;
+.navbar .logo:hover {
+    transform: scale(1.05);
 }
 
 .nav-links a {
     text-decoration: none;
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: bold;
     color: black;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    padding: 10px 15px;
 }
 
 .nav-links a:hover {
-    color: gray;
+    color: #C19A6B;
+    text-shadow: 0 0 10px rgba(193, 154, 107, 0.5); 
 }
+
+
 
 /* Hero Section */
 .hero {
