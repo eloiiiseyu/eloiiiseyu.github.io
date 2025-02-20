@@ -78,8 +78,28 @@ body {
 }
 
 
-.hero-buttons {
-    margin-top: 20px;
+.hero-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #f5f5f5;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: transparent; /* Turns transparent on hover */
+    color: black; /* Keep text black */
+    border: 1px solid black; /* Make the border black */
+}
+
+.hero-button:hover:nth-child(2) {
+    background-color: black; /* Turns black on hover */
+    color: white; /* Change text to white */
 }
 .gap {
     height: 20px; /* Adjust the gap height as needed */
@@ -141,10 +161,6 @@ body {
     margin: 20px;
     font-weight: bold;
     transition: background 0.3s;
-}
-
-.btn:hover {
-    background: #e04e2a;
 }
 
 /* Sections */
