@@ -158,19 +158,6 @@ section {
     padding: 80px 20px;
 }
 
-.experience {
-    padding: 25px;
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-}
-
-.experience h2 {
-    font-size: 54px;
-    margin-bottom: 40px;
-    font-weight: bold;
-    color: black;
-}
 
 .about h2 {
     font-size: 54px;
@@ -235,73 +222,7 @@ section {
 }
 
 
-/* Vertical Line */
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 4px;
-    background-color: #f4f4f4;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -2px;
-}
 
-/* Individual Experience Items */
-.timeline-item {
-    padding: 20px;
-    position: relative;
-    width: 50%;
-    background: white;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-/* Positioning left and right alternately */
-.timeline-item:nth-child(odd) {
-    left: 0;
-}
-
-.timeline-item:nth-child(even) {
-    left: 50%;
-}
-
-/* Circle Indicator */
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    background-color: #f4f4f4;
-    border-radius: 50%;
-    top: 20px;
-    left: 50%;
-    margin-left: -8px;
-}
-
-/* Job Titles */
-.timeline-item h3 {
-    margin: 0 0 10px;
-    color: #ddd;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .timeline::after {
-        left: 20px;
-    }
-
-    .timeline-item {
-        width: 100%;
-        left: 0 !important;
-        padding-left: 40px;
-    }
-
-    .timeline-item::before {
-        left: 20px;
-    }
-}
 
 
 /* Contact Section */
