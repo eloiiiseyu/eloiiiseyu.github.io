@@ -1,8 +1,4 @@
 /* General Styles */
-* {
-    box-sizing: border-box;
-  }
-
 body {
     font-family: "Lucida Console", monospace;
     margin: 0;
@@ -235,14 +231,15 @@ section {
 
 /* The vertical timeline line */
 .timeline::after {
-    content: "";
+    content: '';
     position: absolute;
-    width: 4px;
-    background-color: #c49a6c;  /* Adjust color */
+    width: 6px;
+    background-color: #c49a6c;
+    /* Adjust color */
     top: 0;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    margin-left: -3px;
 }
 
 /* Timeline Circles */
@@ -258,36 +255,42 @@ section {
     left: 50%;
     transform: translateX(-50%);
 }
-  
-  /* Container for left and right events */
-  .timeline .container {
-    position: relative;
-    width: 50%;
-    padding: 10px 40px;
-    box-sizing: border-box;
+
+/* Circles on the timeline */
+.timeline .container::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 4px solid #c49a6c;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
 }
-  
-  .timeline .container.left {
+
+
+.timeline .container.left {
     left: 0;
     text-align: right;
-  }
-  
-  .timeline .container.right {
+}
+
+.timeline .container.right {
     left: 50%;
     text-align: left;
-  }
+}
 
-  /*content box*/
-  .experience .content {
+/*content box*/
+.experience .content {
     background-color: white;
     padding: 15px;
     border-radius: 8px;
     position: relative;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-  
-  /* Arrows for Timeline Boxes */
-  .timeline .container.left::before {
+
+/* Arrows for Timeline Boxes */
+.timeline .container.left::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -298,9 +301,9 @@ section {
     border: medium solid white;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
-  }
-  
-  .timeline .container.right::before {
+}
+
+.timeline .container.right::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -311,12 +314,23 @@ section {
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
-  }
-  
-  
-  
-  /* Responsive Timeline - Align All Items Left on Small Screens */
-  @media screen and (max-width: 768px) {
+}
+
+
+
+/* Fix alignment for left & right circles */
+.left::after {
+    right: -10px;
+}
+
+.right::after {
+    left: -10px;
+}
+
+
+
+/* Responsive Timeline - Align All Items Left on Small Screens */
+@media screen and (max-width: 768px) {
     .timeline::after {
         left: 20px;
     }
