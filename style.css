@@ -245,14 +245,7 @@ section {
     margin-left: -3px;
   }
   
-  /* Ensure Only Timeline Containers Are Styled */
-  .timeline .container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-  }
-  
+
   /* Timeline Circles */
   .timeline .container::after {
     content: '';
@@ -267,13 +260,18 @@ section {
     z-index: 1;
   }
   
-  /* Left and Right Positioning for Timeline */
+  .timeline .container {
+    padding: 15px 50px; /* Increased padding for better spacing */
+    width: 45%; /* Avoid touching the timeline */
+  }
+  
   .timeline .container.left {
-    left: 0;
+    left: 5%;
   }
   
   .timeline .container.right {
     left: 50%;
+    transform: translateX(-5%);
   }
   
   /* Arrows for Timeline Boxes */
@@ -333,9 +331,11 @@ section {
   /* Responsive Timeline - Align All Items Left on Small Screens */
   @media screen and (max-width: 600px) {
     .timeline::after {
-      left: 31px;
-    }
-  
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white; /* Ensuring correct color */
+      }
+      
     .timeline .container {
       width: 100%;
       padding-left: 70px;
@@ -351,12 +351,21 @@ section {
     }
   
     .timeline .container::after {
-      left: 15px;
-    }
-  
-    .timeline .container.right {
-      left: 0%;
-    }
+        width: 20px;
+        height: 20px;
+        right: -12px; /* Adjusted to align better */
+        background-color: white;
+        border: 3px solid #C19A6B;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+      }
+      
+      .timeline .container.right::after {
+        left: -12px; /* Properly aligning circles on the right */
+        right: auto;
+      }
+      
   }
 
 
