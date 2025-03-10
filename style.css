@@ -255,7 +255,7 @@ section {
 }
 
 /* The circles on the timeline */
-.timeline .container.container::after {
+.timeline .container::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -269,14 +269,13 @@ section {
 }
 
 /* Place the container to the left */
-.timeline .container .left {
+.timeline .container.left {
     left: 0;
 }
-
-/* Place the container to the right */
-.timeline .container .right {
+.timeline .container.right {
     left: 50%;
 }
+
 
 
 
@@ -295,7 +294,7 @@ section {
 }
 
 /* Add arrows to the right container (pointing left) */
-.timeline .container .right::before {
+.timeline .container.right::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -309,7 +308,7 @@ section {
 }
 
 /* Fix the circle for containers on the right side */
-.timeline .container .right::after {
+.timeline .container.right::after {
     left: -16px;
 }
 
@@ -330,14 +329,14 @@ section {
     }
 
     /* Full-width containers */
-    .timeline .container .container {
+    .timeline .container {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
 
     /* Make sure that all arrows are pointing leftwards */
-    .timeline .container.container::before {
+    .timeline .container::before {
         left: 60px;
         border: medium solid white;
         border-width: 10px 10px 10px 0;
