@@ -228,11 +228,15 @@ section {
 
 /* Timeline Container */
 .timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #c49a6c; /* Adjust to match your design */
+    transform: translateX(-50%);
+}
+
   /* Vertical Timeline Line */
   .timeline::after {
     content: '';
