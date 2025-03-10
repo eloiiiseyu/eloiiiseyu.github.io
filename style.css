@@ -2,7 +2,7 @@
 * {
     box-sizing: border-box;
   }
-  
+
 body {
     font-family: "Lucida Console", monospace;
     margin: 0;
@@ -247,7 +247,7 @@ section {
 }
 
 /* Container around content */
-.container {
+.timeline .container {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
