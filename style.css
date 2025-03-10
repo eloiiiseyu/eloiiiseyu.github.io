@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: "Lucida Console",  monospace;
+    font-family: "Lucida Console", monospace;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -8,10 +8,13 @@ body {
     color: #333;
 }
 
+
 /* Navigation Bar */
 .navbar {
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparent */
-    backdrop-filter: blur(10px); /* Glass effect */
+    background: rgba(255, 255, 255, 0.2);
+    /* Semi-transparent */
+    backdrop-filter: blur(10px);
+    /* Glass effect */
     padding: 20px 0;
     text-align: center;
     position: fixed;
@@ -92,14 +95,18 @@ body {
 }
 
 .hero-buttons:hover {
-    background-color: #C19A6B !important; /* Turns transparent on hover */
-    color: white !important; /* Keep text black */
-    border: 1px solid #C19A6B !important; /* Make the border black */
+    background-color: #C19A6B !important;
+    /* Turns transparent on hover */
+    color: white !important;
+    /* Keep text black */
+    border: 1px solid #C19A6B !important;
+    /* Make the border black */
 }
 
 
 .gap {
-    height: 20px; /* Adjust the gap height as needed */
+    height: 20px;
+    /* Adjust the gap height as needed */
 }
 
 .btn {
@@ -112,6 +119,7 @@ body {
     cursor: pointer;
     margin: 5px;
 }
+
 .hero .container {
     display: flex;
     align-items: center;
@@ -121,12 +129,17 @@ body {
     margin: auto;
     padding: 50px 20px;
 }
+
 .hero-image {
-    width: 100%;  /* Full width */
-    max-width: 1400px; /* Increased max width */
-    height: auto; /* Keep aspect ratio */
+    width: 100%;
+    /* Full width */
+    max-width: 1400px;
+    /* Increased max width */
+    height: auto;
+    /* Keep aspect ratio */
     display: block;
-    margin: 0; /* Removes centering */
+    margin: 0;
+    /* Removes centering */
 }
 
 
@@ -145,6 +158,20 @@ section {
     padding: 80px 20px;
 }
 
+.experience {
+    padding: 25px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.experience h2 {
+    font-size: 54px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: black;
+}
+
 .about h2 {
     font-size: 54px;
     font-weight: bold;
@@ -152,20 +179,23 @@ section {
 }
 
 
-.experience h2 {
-    font-size: 54px;
-    font-weight: bold;
-    color: black;
-}
-.projects, .experience {
-    background: #f4f4f4; /* Lighter background for a cleaner look */
+
+.projects,
+.experience {
+    background: #f4f4f4;
+    /* Lighter background for a cleaner look */
     margin: 20px auto;
     padding: 25px;
-    max-width: 1200px; /* Increased width for better readability */
-    border-radius: 12px; /* Softer rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    border: 1px solid #eeeded; /* Light border for structure */
+    max-width: 1200px;
+    /* Increased width for better readability */
+    border-radius: 12px;
+    /* Softer rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    border: 1px solid #eeeded;
+    /* Light border for structure */
 }
+
 .project {
     flex: 1;
     min-width: 300px;
@@ -190,9 +220,12 @@ section {
 }
 
 .project-button:hover {
-    background-color: #C19A6B !important; /* Turns dark blue on hover */
-    color: white!important; /* Turns text white */
-    border: 1px solid #C19A6B !important; /* Matches the new background color */
+    background-color: #C19A6B !important;
+    /* Turns dark blue on hover */
+    color: white !important;
+    /* Turns text white */
+    border: 1px solid #C19A6B !important;
+    /* Matches the new background color */
 }
 
 .projects h2 {
@@ -200,26 +233,96 @@ section {
     font-weight: bold;
     color: black;
 }
-/* Contact Section */
-.contact p a {
-    color: #ff5733;
-    font-weight: bold;
-    text-decoration: none;
+
+
+/* Vertical Line */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #f4f4f4;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
 }
+
+/* Individual Experience Items */
+.timeline-item {
+    padding: 20px;
+    position: relative;
+    width: 50%;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Positioning left and right alternately */
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+/* Circle Indicator */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    top: 20px;
+    left: 50%;
+    margin-left: -8px;
+}
+
+/* Job Titles */
+.timeline-item h3 {
+    margin: 0 0 10px;
+    color: #ddd;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        padding-left: 40px;
+    }
+
+    .timeline-item::before {
+        left: 20px;
+    }
+}
+
+
+/* Contact Section */
+
 .contact h2 {
     font-size: 54px;
     font-weight: bold;
     color: black;
 }
+
 .contact p a:hover {
     text-decoration: underline;
 }
+
 .social-links {
     margin-top: 20px;
     display: flex;
     gap: 15px;
     color: black;
 }
+
 /* Footer */
 footer {
     background: white;
