@@ -226,15 +226,8 @@ section {
 }
 
 
-/* Timeline Container */
-.timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Vertical Timeline Line */
-  .timeline::after {
+/* Ensure Timeline Line is Centered */
+.timeline::after {
     content: '';
     position: absolute;
     width: 6px;
@@ -242,129 +235,43 @@ section {
     top: 0;
     bottom: 0;
     left: 50%;
-    margin-left: -3px;
-  }
-  
+    transform: translateX(-50%);
+}
 
-  /* Timeline Circles */
-  .timeline .container::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid #C19A6B;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  .timeline .container {
-    padding: 15px 50px; /* Increased padding for better spacing */
-    width: 45%; /* Avoid touching the timeline */
-  }
-  
-  .timeline .container.left {
+/* Timeline Containers */
+.timeline .container {
+    padding: 15px 50px;
+    width: 48%; /* Adjusted width */
+}
+
+/* Adjust Left & Right Containers */
+.timeline .container.left {
     left: 5%;
-  }
-  
-  .timeline .container.right {
-    left: 50%;
-    transform: translateX(-5%);
-  }
-  
-  /* Arrows for Timeline Boxes */
-  .timeline .container.left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-  }
-  
-  .timeline .container.right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-  
-  /* Fix the Right-side Circle Position */
-  .timeline .container.right::after {
-    left: -16px;
-  }
+}
 
-  
-  .timeline .container:last-child::before {
+.timeline .container.right {
+    left: 52%;
+    transform: translateX(-50%);
+}
+
+/* Fix Circles Alignment */
+.timeline .container.left::after {
+    right: -12px;
+}
+
+.timeline .container.right::after {
+    left: -12px;
+}
+
+/* Ensure Last Element is Properly Aligned */
+.timeline .container:last-child::before {
     display: none;
-  }
-  
-  .timeline .container:last-child::after {
-    left: auto;
-    right: -16px;
-  }
-  
-  /* Timeline Content Styling */
-  .timeline .content {
-    padding: 20px 30px;
-    background-color: white;
-    position: relative;
-    border-radius: 6px;
-  }
-  
-    /* Responsive Timeline - Align All Items Left on Small Screens */
-    @media screen and (max-width: 600px) {
-        .timeline::after {
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: white; /* Ensuring correct color */
-          }
-          
-        .timeline .container {
-          width: 100%;
-          padding-left: 70px;
-          padding-right: 25px;
-          left: 0;
-        }
-      
-        .timeline .container::before {
-          left: 60px;
-          border: medium solid white;
-          border-width: 10px 10px 10px 0;
-          border-color: transparent white transparent transparent;
-        }
-      
-        .timeline .container::after {
-            width: 20px;
-            height: 20px;
-            right: -12px; /* Adjusted to align better */
-            background-color: white;
-            border: 3px solid #C19A6B;
-            top: 15px;
-            border-radius: 50%;
-            z-index: 1;
-          }
-          
-          .timeline .container.right::after {
-            left: -12px; /* Properly aligning circles on the right */
-            right: auto;
-          }
-          
-      }
-    
+}
 
+.timeline .container:last-child::after {
+    left: auto;
+    right: -12px;
+}
 
 
 /* Contact Section */
