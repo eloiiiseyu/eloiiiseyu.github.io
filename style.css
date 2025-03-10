@@ -305,11 +305,7 @@ section {
   .timeline .container.right::after {
     left: -16px;
   }
-  
-  /* Ensure Last Timeline Item is Left-Aligned */
-  .timeline .container:last-child {
-    left: 0 !important;
-  }
+
   
   .timeline .container:last-child::before {
     display: none;
@@ -328,46 +324,6 @@ section {
     border-radius: 6px;
   }
   
-  /* Responsive Timeline - Align All Items Left on Small Screens */
-  @media screen and (max-width: 600px) {
-    .timeline::after {
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: white; /* Ensuring correct color */
-      }
-      
-    .timeline .container {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-      left: 0;
-    }
-  
-    .timeline .container::before {
-      left: 60px;
-      border: medium solid white;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
-    }
-  
-    .timeline .container::after {
-        width: 20px;
-        height: 20px;
-        right: -12px; /* Adjusted to align better */
-        background-color: white;
-        border: 3px solid #C19A6B;
-        top: 15px;
-        border-radius: 50%;
-        z-index: 1;
-      }
-      
-      .timeline .container.right::after {
-        left: -12px; /* Properly aligning circles on the right */
-        right: auto;
-      }
-      
-  }
-
 
 
 
